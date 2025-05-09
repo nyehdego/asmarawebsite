@@ -1,0 +1,242 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #FFF491;
+    color: #448D59;
+    margin: 0;
+    padding: em;
+}
+
+header {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#448D59;
+    color: #FFF491;
+}
+
+.menu-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-details h4 {
+    margin: 0px;
+    text-align: center;
+    max-width: 900px;
+}
+
+.side-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-setup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    margin: 15px;
+}
+
+.logo {
+    width: 400px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #FFF491;
+    font-size: 20px;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+    color: #ffd700;
+  }
+
+.category-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.category-buttons button {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    padding: 10px 15px;
+    border: 2px solid #448D59;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.category-buttons button:hover {
+    background: transparent;
+    opacity: 0.6;
+    transition: ease-in-out;
+}
+
+.category-buttons .active {
+    background: #448D59;
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+}
+
+.menu-items {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    width: 80%;
+    border-bottom: 1px solid rgba(68, 141, 89, 0.2)
+}
+
+.menu-item h2 {
+    grid-column: 1 / 2;
+    font-size: 22px;
+    color: #448D59;
+    margin-bottom: 5px;
+}
+
+.menu-item span {
+    grid-column: 1 / 2;
+    font-size: 16px;
+    color: #448D59;
+}
+
+.menu-item .price {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 20px;
+    font-weight: bold;
+    color: #448D59;
+    justify-self: end;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    font-family: 'Lora', serif;
+    padding: 5px 0;
+    margin-top: 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-items {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-item .price {
+        justify-self: center;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-icon {
+        display: flex;
+        justify-content: right;
+        align-self: end;
+        font-size: 30px;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* learned how to use qsudoclasses for the below code from https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes*/
+    #menu-toggle:checked + .menu-icon + .navbar-links {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .menu-items {
+        padding: 5px;
+    }
+
+    .menu-item {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .category-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 100%
+    }
+
+    .category-buttons button {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
