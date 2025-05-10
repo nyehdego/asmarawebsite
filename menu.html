@@ -9,15 +9,16 @@
         got the below line from stackoverflow: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file 
     -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="logo-setup">
         <h1>Asmara</h1>
         <span>An Eritrean Restaurant</span>
         </div>
-        <!-- <img class="logo" src="assets/AsmaraRestaurantLogo.png" alt="Asmara Restaurant in Big Yellow Letters"> -->
-        <nav>
+        <!- <img class="logo" src="assets/AsmaraRestaurantLogo.png" alt="Asmara Restaurant in Big Yellow Letters"> -->
+        <!-- <nav>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="navbar-links" id="nav-menu">
@@ -27,11 +28,36 @@
                 <li><a href="#" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <header> 
+        <div id="banner-content"> 
+            <div id = "banner-name-container" aria-label="Restaurant page heading">
+                    <p class = "text" id = "restaurant-name" aria-label="Asmara" tabindex="0"><b>Asmara</b></p>
+                    <p class = "text" id = "restaurant-name-sub" aria-label="An Eritrean Restaurant" tabindex="1">An Eritrean Restaurant</p>
+            </div>
+            <div id = "banner-list-container">       
+                <ul id="banner-list">
+                    <li class = "banner-button-container">
+                        <p class="text" id = "banner-button" aria-label="Home page button" tabindex="2"> Home </p>
+                    </li>
+                    
+                    <li class = "banner-button-container"> 
+                        <p class="text" id = "banner-button" aria-label="Menu page button" tabindex="3"> Menu </p>
+                    </li>
+
+                    <li class = "banner-button-container">
+                        <p class="text" id = "banner-button" aria-label="Contact page button" tabindex="4"> Contact </p>
+                    </li>
+
+                </ul>
+            </div> 
+        </div>
+</header>
     <main>
         <h1 class="section">Menu</h1>
         <div class="menu-details">
-            <h4>Entrees are served on either a plate of injera or rice, with salad & your choice one side:</h4>
+            <h4>Entrees are served on either a plate of injera or rice, with salad & your choice of one side:</h4>
             <div class="side-options">
                 <h4>(1) Red lentil stew in a red pepper sauce</h4>
                 <h4>(2) Collard greens & kale served in a mild sauce</h4>
@@ -223,8 +249,9 @@
     </script>
 </body>
 <footer>
-    <p>Asmara Restaurant</p>
-    <p>51 Oak St. Portland, ME 04101</p>
-    <p>207-317-7293</p>
+    <p class="text" id="footer-text" aria-label="Asmara" tabindex="21"> <b>Asmara |</b></p>
+    <i class="fa fa-instagram" id = "icons" aria-label="Visit our Instagram" tabindex="22"></i>
+    <i class="fa fa-yelp" id = "icons" aria-label="Read our Yelp reviews" tabindex="23"></i>
+    <i class="fa fa-facebook" id = "icons" aria-label="Visit our Facebook" tabindex="24"></i>
 </footer>
 </html>
