@@ -12,24 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- <header>
-        <div class="logo-setup">
-        <h1>Asmara</h1>
-        <span>An Eritrean Restaurant</span>
-        </div>
-        <!- <img class="logo" src="assets/AsmaraRestaurantLogo.png" alt="Asmara Restaurant in Big Yellow Letters"> -->
-        <!-- <nav>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul class="navbar-links" id="nav-menu">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Menu</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
-
     <header> 
         <div id="banner-content"> 
             <div id = "banner-name-container" aria-label="Restaurant page heading">
@@ -54,7 +36,11 @@
         </div>
 </header>
     <main>
-        <h1 class="section">Menu</h1>
+        
+        <div id = "contact-image-content">
+            <img src="images/Owner-picture.png" alt="Asmara Contact Image" id = "contact-image" aria-label="Picture of the restaurant owner">
+            <strong class = "text" id = "contact-image-text" aria-label="Contact Us" tabindex="5">Menu</strong>
+        </div>
         <div class="menu-details">
             <h4>Entrees are served on either a plate of injera or rice, with salad & your choice of one side:</h4>
             <div class="side-options">
@@ -197,7 +183,7 @@
             <div class="menu-item" data-category="veg-item">
                 <h2 class="item-name">Vegetarian Sampler</h2>
                 <span class="description">Heartly portions of all vegetarian dishes (Serves 3-4)</span>
-                <p class="price">$19.95</p>
+                <p class="price">$59.95</p>
             </div>
             <div class="menu-item" data-category="app-item">
                 <h2 class="item-name">Beef Sambusa</h2>
@@ -209,19 +195,41 @@
                 <span class="description">Lentils with pepper & onions wrapped in dough & deep-fried</span>
                 <p class="price">$2.95</p>
             </div>
+            <div class="menu-item" data-category="app-item">
+                <h2 class="item-name">Salata Fit Fit</h2>
+                <span class="description">Chopped tomatoes, onions and green chilies seasoned in house dressing and soaked with pieces of injera</span>
+                <p class="price">$8.95</p>
+            </div>
+            <div class="menu-item" data-category="drink-item">
+                <h2 class="item-name">Honey Wine/Meis</h2>
+                <span class="description">Homemade  amber-colored honey wine, which has a sweet flavor & slightly thick consistency</span>
+                <p class="price">Large: $9.95, Small: $6.95</p>
+            </div>
+            <div class="menu-item" data-category="drink-item">
+                <h2 class="item-name">Beer</h2>
+                <span class="description">Please ask your server for current options</span>
+                <p class="price">$6.95</p>
+            </div>
+            <div class="menu-item" data-category="drink-item">
+                <h2 class="item-name">Fresh Squeezed Lemonade</h2>
+                <p class="price">$4.95</p>
+            </div>
+            <div class="menu-item" data-category="drink-item">
+                <h2 class="item-name">Homemade Iced Tea</h2>
+                <p class="price">$4.95</p>
+            </div>
+            <div class="menu-item" data-category="drink-item">
+                <h2 class="item-name">Fresh Avocado Juice</h2>
+                <p class="price">$4.95</p>
+            </div>
+            <div class="menu-item" data-category="drink-item">
+                <h2 class="item-name">Mango Juice</h2>
+                <span class="description">Goya made</span>
+                <p class="price">$3.95</p>
+            </div>
             <div class="menu-item" data-category="drink-item">
                 <h2 class="item-name">Soda</h2>
                 <span class="description">Coke, Ginger Ale & more (ask what's available)</span>
-                <p class="price">$2.95</p>
-            </div>
-            <div class="menu-item" data-category="drink-item">
-                <h2 class="item-name">Mango Juice</h2>
-                <span class="description">Goya made</span>
-                <p class="price">$2.95</p>
-            </div>
-            <div class="menu-item" data-category="drink-item">
-                <h2 class="item-name">Mango Juice</h2>
-                <span class="description">Goya made</span>
                 <p class="price">$2.95</p>
             </div>
         </div>
