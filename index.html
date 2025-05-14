@@ -2,54 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Asmara Restaurant</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #225e21;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #225e21;
+      padding: 15px;
+      text-align: center;
+    }
+
+    #banner-content {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #banner-name-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    #restaurant-name {
+      font-size: 3rem;
+    }
+
+    #restaurant-name-sub {
+      font-size: 1.5rem;
+    }
+
+    .text {
+      font-family: Khand;
+      color: #fffd55;
+      margin: 0;
+      padding: 0;
+    }
+
+    #banner-list-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      float: right;
+      overflow: hidden;
+    }
+
+    #banner-list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      
+    }
+
+    #banner-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+    .banner-button-container {
+      padding: .5rem;
+      margin: .5rem;
+    }
+
+    .banner-button-container:hover {
+      background-color: rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+      color: #fffd55;
+    }
+
+    #banner-button {
+      font-size: 1.5rem;
+    }
+
+    footer {
+      background-color: #fffd55;
+      display: flex;
+      gap: .75rem;
+      align-content: center;
+      justify-content: center;
+      padding: .5rem;
+      margin-top: 1rem;
+      flex-shrink: 0;
+    }
+
+    #footer-text {
+      font-size: 1.5rem;
+      color: #225e21;
+    }
+
+    #icons {
+      font-size: 1.8rem;
+      color: #225e21;
+    }
+
+    #icons:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 460px) {
+      #banner-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      #contact-image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+      }
+
+      #restaurant-name {
+        font-size: 1.2rem;
+      }
+
+      #restaurant-name-sub {
+        font-size: 1rem;
+      }
+
+      #banner-button {
+        font-size: 1rem;
+      }
+
+    }
+  </style>
 </head>
-<body class="text-yellow-100 font-sans">
-  <div class="relative min-h-screen bg-center bg-[length:100%_auto] md:bg-cover bg-no-repeat" style="background-image: url('kylehomepage/background.jpg');">
-    <div class="absolute inset-0 bg-green-900 opacity-70"></div>
-    <div class="relative z-10 p-6 pt-8 md:pt-12 lg:pt-20 w-full max-w-3xl mx-auto flex flex-col gap-12 items-center text-center">
-      <header>
-        <h1 class="text-4xl md:text-6xl font-bold tracking-wide text-yellow-300">ASMARA RESTAURANT</h1>
-        <nav class="mt-6 flex flex-wrap gap-6 justify-center font-medium text-lg md:text-xl">
-          <a href="#" class="hover:text-[#0077b6] transition-colors duration-200">HOME</a>
-          <a href="#" class="hover:text-[#0077b6] transition-colors duration-200">CONTACT</a>
-          <a href="#" class="hover:text-[#0077b6] transition-colors duration-200">MENU</a>
-          <a href="#" class="hover:text-[#0077b6] transition-colors duration-200">REVIEWS</a>
-        </nav>
-        <div class="mt-4 flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a href="https://www.instagram.com/asmaramaine/" target="_blank" aria-label="Visit Asmara Maine on Instagram">
-            <img src="kylehomepage/instagramlogo.jpg" alt="Instagram logo" class="w-7 h-7 rounded hover:opacity-80 transition" />
-          </a>
-          <span class="text-base md:text-lg">(207) 253-5122</span>
-          <a href="https://www.facebook.com/asmaramaine/" target="_blank" aria-label="Visit Asmara Maine on Facebook">
-            <img src="kylehomepage/facebooklogo.jpg" alt="Facebook logo" class="w-7 h-7 rounded hover:opacity-80 transition" />
-          </a>
-        </div>
-      </header>
-      <section>
-        <h3 class="text-xl md:text-2xl font-bold text-[#d92d20]">HOURS 📅</h3>
-        <p class="mt-2 uppercase font-semibold md:text-lg">Come In!</p>
-        <p class="mt-1 text-base md:text-lg">Tuesday - Saturday</p>
-        <p class="text-base md:text-lg">11:30 AM - 2:30 PM</p>
-        <p class="text-base md:text-lg">4:30 PM - 9:00 PM</p>
-        <p class="mt-2 text-[#d92d20] font-medium uppercase md:text-lg">Sunday & Monday Closed</p>
-      </section>
-      <section>
-        <h3 class="text-xl md:text-2xl font-bold text-[#d92d20]">LOCATION 📍</h3>
-        <p class="mt-2 text-base md:text-lg">51 Oak Street</p>
-        <p class="text-base md:text-lg">Portland, Maine 04101</p>
-        <div class="mt-4 mx-auto w-full max-w-md shadow-lg rounded overflow-hidden border-2 border-white">
+<body>
+  <header> 
+    <div id="banner-content"> 
+      <div id="banner-name-container" aria-label="Restaurant page heading">
+        <h1 class="text" id="restaurant-name" tabindex="0">Asmara</h1>
+        <p class="text" id="restaurant-name-sub" tabindex="1">An Eritrean Restaurant</p>
+      </div>
+      <nav id="banner-list-container" aria-label="Main navigation">
+        <ul id="banner-list">
+          <li class="banner-button-container"><a href="index.html"><span class="text" id="banner-button" tabindex="2">Home</span></a></li>
+          <li class="banner-button-container"><a href="menu.html"><span class="text" id="banner-button" tabindex="3">Menu</span></a></li>
+          <li class="banner-button-container"><a href="contact.html"><span class="text" id="banner-button" tabindex="4">Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro" style="position: relative; text-align: center; color: #fffd55; min-height: 100vh;">
+      <img src="kylehomepage/background.jpg" alt="Asmara background image" id="contact-image" style="height: 100%; width: 100%; object-fit: cover;">
+      <div style="position: absolute; inset: 0; background-color: rgba(34,94,33,0.7);"></div>
+      <div style="position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin-bottom: 0;">
+        
+        <p style="font-size: 3.5rem; font-weight: bold;">Welcome to Asmara</p>
+
+        <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem;">HOURS <span aria-hidden="true">📅</span></h2>
+        <p class="text" style="font-size: 1.1rem; margin-bottom: .3rem;">Come In!</p>
+        <p class="text" style="font-size: 1rem;">Tuesday – Saturday</p>
+        <p class="text" style="font-size: 1rem; margin-bottom: .3rem;">11:30 AM – 2:30 PM<br>4:30 PM – 9:00 PM</p>
+        <p class="text" style="color: #d92d20; font-size: .95rem;">Sunday &amp; Monday Closed</p>
+
+        <article id="location" style="max-width: 600px; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem;">LOCATION <span aria-hidden="true">📍</span></h2>
+          <p class="text" style="font-size: 1rem;">51 Oak Street<br>Portland, Maine 04101</p>
+        </article>
+
+        <div id="map-container" style="width: 100%; max-width: 400px; border: 2px solid #fffd55; border-radius: 12px; overflow: hidden; margin-bottom: 2rem;">
           <iframe
             src="https://maps.google.com/maps?q=51%20Oak%20Street%20Portland,%20Maine&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            class="w-full h-64"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+            width="100%" height="300" style="border:0;"
+            allowfullscreen="" loading="lazy">
+          </iframe>
         </div>
-      </section>
-    </div>
-  </div>
+
+        <div id="contact-logos" style="display: flex; gap: 2rem; align-items: center; justify-content: center;">
+          <a href="https://www.instagram.com/asmaramaine/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram" style="font-size: 2.2rem;"></i></a>
+          <span class="text" style="font-size: 1.1rem;">(207) 253-5122</span>
+          <a href="https://www.facebook.com/asmaramaine/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook" style="font-size: 2.2rem;"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="text" id="footer-text" tabindex="21"><b>Asmara |</b></p>
+    <i class="fa fa-instagram" id="icons" tabindex="22"></i>
+    <i class="fa fa-yelp" id="icons" tabindex="23"></i>
+    <i class="fa fa-facebook" id="icons" tabindex="24"></i>
+  </footer>
 </body>
 </html>
