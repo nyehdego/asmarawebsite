@@ -65,55 +65,58 @@
                 </div>
             </div>
 
-            <div id = "message-content">   
+            <form id="message-content" method="post" action="mailto:yabekezike@gmail.com" target="_blank">
                 <div id="message-context-section">
                     <div class = "message-information-section">   
                         <div class = "message-information-section">
-                            <div class = "contact-information-header">
+                            <label class = "contact-information-header" for="name">
                                 <p class="text contact-information-header-text" aria-label="Name input box header" tabindex="13"> <b>  Name: </b></p>
-                            </div>
-                            <div class="small-input-box">
-                                <p class="input-box-text" aria-label="Begin typing your email" tabindex="14"> Your name</p>
-                            </div>
+                            </label>
+                            <input class="small-input-box" type="text" name="name" id="name" placeholder="Your name" required>
                         </div>
                         
                         <div class = "message-information-section">
-                            <div class = "contact-information-header">
+                            <label class = "contact-information-header" for="email">
                                 <p class="text contact-information-header-text" aria-label="Email input box header" tabindex="14"> <b>  Email: </b></p>
-                            </div>
-                            <div class="small-input-box">
-                                <p class="input-box-text" aria-label="Begin typing your email" tabindex="15"> Your email</p>
-                            </div>
+                            </label>
+                            <input class="small-input-box" type="email" name="email" id="email" placeholder="Your email" required>
                         </div>
     
-                        <div class = "message-information-section">
-                            <div class = "contact-information-header">
-                                <p class="text contact-information-header-text" aria-label="Subject input box header" tabindex="16"> <b>  Subject: </b></p>
-                            </div>
-                            <div class="small-input-box">
-                                <p class="input-box-text" aria-label="Begin typing the subject of your message" tabindex="17"> Subject of message </p>
-                            </div>
+                        <div class="message-information-section">   
+                            <label class = "contact-information-header" for="phone">
+                                <p class="text contact-information-header-text" aria-label="Subject input box header" tabindex="15"> <b>  Phone Number: </b></p>
+                            </label>
+                            <input class="small-input-box" type="tel" name="phone" id="phone" placeholder="Your phone number" required>
                         </div>
+
                     </div>
     
-                    <div class="written-message-section">
+                    <div class= "message-information-section">
+                        <div class = "message-information-section">
+                            <label class = "contact-information-header" for="subject">
+                                <p class="text contact-information-header-text" aria-label="Subject input box header" tabindex="16"> <b>  Subject: </b></p>
+                            </label>
+                            <input class="small-input-box" type="text" name="subject" id="subject" placeholder="Subject of your message" required>
+                        </div>
+
                         <div class="message-information-section">   
-                            <div class = "contact-information-header">
-                                <p class="text contact-information-header-text" aria-label="Message input box header" tabindex="18"> <b>  Message: </b></p>
-                            </div>
-                            <div class="small-input-box" id = "message-input-box">
-                                <p class="input-box-text" aria-label="Begin typing your message" tabindex="19"> Your message</p>
-                            </div>
+                            <label class = "contact-information-header" for="message">
+                                <p class="text contact-information-header-text" aria-label="Subject input box header" tabindex="17"> <b>  Message: </b></p>
+                            </label>
+                            <input class="small-input-box" type="text" name="message" id="message" placeholder="Your message" required>
                         </div>
                     </div>
                 </div>
 
+
                 <div>
-                    <div id="submit-button" aria-label="Submit contact form">
+                    <button id="submit-button" aria-label="Submit contact form" type="submit" target="_blank">
                         <p class="text" id="submit-text" tabindex="20"> <b>Submit</b></p>
-                    </div>
+                    </button>
                 </div>
-            </div>
+            </form>
+
+
         </div>
         <footer>
             <p class="text" id="footer-text" aria-label="Asmara" tabindex="21"> <b>Asmara |</b></p>

@@ -225,8 +225,16 @@ header{
 
 .small-input-box{
     width: 90%;
-    border-radius: 3%;
+    border-radius: 2%;
+
+    padding: .75rem;
+    /* margin: 1rem; */
+    /* display: inline-block; */
+    border: solid #ccc;
+    box-sizing: border-box;
     background-color: #EDE5E5;
+
+    
 }
 
 .small-input-box:hover{
@@ -304,6 +312,22 @@ footer{
         margin: 0;
         padding: 0;
         overflow: hidden;
+    }
+
+    .message-information-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        float : left;
+        overflow: hidden;
+        flex: 2;
+        margin-bottom: .5rem;
     }
 }
 
