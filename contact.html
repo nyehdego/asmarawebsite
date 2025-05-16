@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <form id="message-content" method="post" action="mailto:yabekezike@gmail.com" target="_blank">
+            <form id="message-content" method="post" action="javascript:void(0);">
                 <div id="message-context-section">
                     <div class = "message-information-section">   
                         <div class = "message-information-section">
@@ -114,6 +114,22 @@
                         <p class="text" id="submit-text" tabindex="20"> <b>Submit</b></p>
                     </button>
                 </div>
+
+                <script>
+                    const form = document.querySelector("form");
+            
+                    form.addEventListener("submit", (e) => {
+                        const name = document.querySelector("#name").value;
+                        const email = document.querySelector("#email".value);
+                        const phone = document.querySelector("#phone").value;
+                        const subject = document.querySelector("#subject").value;
+                        const message = document.querySelector("#message").value;
+
+
+                        const mailto = "mailto:yabekezike@gmail.com?subject=" + subject + "&body=Name: " + name + "%0D%0AEmail: " + email + "%0D%0APhone Number: " + phone + "%0D%0AMessage: " + message
+                        window.open(mailto)
+                    })
+                </script>
             </form>
 
 
